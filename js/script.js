@@ -843,7 +843,7 @@
 							form.addClass('form-in-process');
 
 							if (output.hasClass("snackbars")) {
-								output.html('<p><span class="icon text-middle fa fa-circle-o-notch fa-spin icon-xxs"></span><span>Enviado</span></p>');
+								output.html('<p><span class="icon text-middle fa fa-paper-plane icon-xxs"></span><span>Enviado</span></p>');
 								output.addClass("active");
 							}
 						} else {
