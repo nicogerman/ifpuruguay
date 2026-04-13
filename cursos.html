@@ -4,11 +4,13 @@
     
     <title>IFP</title>
     <meta charset="utf-8">
+    <script>window.addEventListener('pageshow',function(e){if(e.persisted)location.reload();});</script>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500,700%7CNoto+Sans:400,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700%7CNoto+Sans:400,700" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ifp-custom.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
@@ -43,49 +45,28 @@
                 <!-- RD Navbar Toggle-->
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                 <button class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></button>
-                <div class="rd-navbar-brand"><a class="brand-name" href="home.html"><img class="brand-device" src="images/brand-default-229x58.png" width="229" height="58" alt="Home service"><img class="brand-mobile" src="images/brand-white-229x58.png" width="229" height="58" alt="Home service"></a></div>
+                <div class="rd-navbar-brand"><a class="brand-name" href="home.html"><img class="brand-device" src="images/logo.gif" width="229" height="58" alt="Home service"><img class="brand-mobile" src="images/logo.gif" width="229" height="58" alt="Home service"></a></div>
               </div>
               <div class="rd-navbar-collapse animated">
                 <div class="rd-navbar-collapse-items">
-                  <ul class="list-inline">
+                  <ul>
                     <li>
                       <div class="unit flex-row unit-spacing-xs">
-                        <div class="unit-left"><span class="icon icon-primary fa-phone"></span></div>
+                        <div class="unit-left"><span class="icon icon-primary fa-whatsapp"></span></div>
                         <div class="unit-body">
                           <div class="title"><span class="small">CONSULTAS Y SOPORTE</span></div>
-                          <h6><a href="https://wa.me/59892383737">092.383.737</a></h6>
-
+                          <h3><a style="color: #FF8C00;" href="https://wa.me/59892383737">092 38 37 37</a></h3>
+ 
                         </div>
                       </div>
                     </li>
-                    <li>
-                      <div class="unit flex-row unit-spacing-xs">
-                        <div class="unit-left"><span class="icon icon-primary fa-map-marker"></span></div>
-                        <div class="unit-body">
-                          <div class="title"><span class="small">DIRECCIÓN</span></div>
-                          <h6><a href="https://www.google.com/maps/place/Carlos+Berg,+11300+Montevideo,+Departamento+de+Montevideo/@-34.9135651,-56.161113,17z/data=!3m1!4b1!4m5!3m4!1s0x959f81a0768b3f5f:0xd47351bc2c37a24e!8m2!3d-34.9135695!4d-56.1589243">Carlos Berg 2447 / 203<br class="d-none d-md-block"></a></h6>
-
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="unit flex-row unit-spacing-xs">
-                        <div class="unit-left"><span class="icon icon-primary fa-clock-o"></span></div>
-                        <div class="unit-body">
-                          <div class="title"><span class="small">HORARIO DE ATENCIÓN</span></div>
-                          <h6>24/7</h6>
-                        </div>
-                      </div>
-                    </li>
+                    
                   </ul>
                 </div>
                  <div class="rd-navbar-collapse-items">
                   <ul class="list-inline list-inline-lg offset-top-0">
-                    <li><a class="ioon icon-sm icon-silver-chalice fa-facebook" href="#"></a></li>
-                    <li><a class="ioon icon-sm icon-silver-chalice fa-twitter" href="#"></a></li>
-                    <li><a class="ioon icon-sm icon-silver-chalice fa-instagram" href="#"></a></li>
-                    <li><a class="ioon icon-sm icon-silver-chalice fa-google-plus" href="#"></a></li>
-                    <li><a class="ioon icon-sm icon-silver-chalice fa-pinterest-p" href="#"></a></li>
+                    <li><a class="icon icon-sm icon-silver-chalice fa-whatsapp" href="https://wa.me/59892383737" target="_blank" rel="noopener noreferrer" title="WhatsApp"></a></li>
+                    <li><a class="icon icon-sm icon-silver-chalice fa-envelope" href="mailto:operaciones@ifp.edu.uy" title="Email"></a></li>
                   </ul>
                 </div>
 
@@ -99,7 +80,8 @@
                   <li><a href="home.html">Inicio</a></li>
                   <li><a href="Quienes-somos.html">¿Quienes somos?</a></li>
                   <li class="active"><a href="cursos.html">Cursos</a>
-                    <li><a href="cronograma.pdf">Cronograma</a></li>
+                    <li><a href="cronograma.pdf" target="_blank" rel="noopener noreferrer">Cronograma</a></li>
+                  <li><a href="https://www.ifp.edu.uy/moodle/login/index.php" target="_blank" rel="noopener noreferrer">Campus Virtual</a></li>
                   <li><a href="contacts.html">contactos / inscripcciones</a></li>
                 </ul>
               </div>
@@ -118,18 +100,16 @@
           </div>
         </div>
       </section>
-      <section class=" bg-image bg-image-fixed section-xl" style="background-image: url(images/home-03-slide-01.jpg)">
+      <section class="bg-image bg-image-fixed section-xl ifp-cursos-hero" style="background-image: url(images/home-03-slide-01.jpg)">
         <div class="container">
           <div class="row">
             <div class="col-xl-16" style="color: white">
-              <br> <h2 style="color: #212121" FONT FACE="calibri">Aprendizaje y Evaluación</FONT></h2>
-              <br><h3 style="color: white"><FONT FACE="calibri">En los cursos utilizamos metodologías que combinan exposición y participación, enfocado a objetivos e integrando la experiencia de los capacitadores en la práctica profesional, de forma de mantener a los participantes atentos y motivados.
+              <h2 style="color: #212121">Aprendizaje y Evaluación</h2>
+              <h3 style="color: white">En los cursos utilizamos metodologías que combinan exposición y participación, enfocado a objetivos e integrando la experiencia de los capacitadores en la práctica profesional, de forma de mantener a los participantes atentos y motivados.
              <br><br>
              Los cursos pueden ser adaptados a las necesidades de la organización de forma que se ajusten a la realidad de las mismas, incluyendo casos prácticos y reales, propios de la naturaleza y actividad de la empresa, sabiendo que se necesita saber que se obtendrá del curso en forma inmediata y que valor tendrá en su aplicación en la organización.
              <br><br>
-
-             Dada la diversidad de cursos, talleres, charlas, webinars, actualizaciones técnicas que imparte el IFP, las mismas podrán  ser para la obtención de competencias  y en estos casos están  previstas  instancias de evaluación de conocimiento,  donde el participante, para resultar aprobado y obtener un certificado IFP de Aprobación,  debe obtener  un nivel mínimo de conocimientos y competencia determinado, o pueden ser   informativas, donde  la concurrencia a los mismos, dará lugar a un certificado IFP de Participación.  </h3>
-              </div>
+             Dada la diversidad de cursos, talleres, charlas, webinars, actualizaciones técnicas que imparte el IFP, las mismas podrán  ser para la obtención de competencias  y en estos casos están  previstas  instancias de evaluación de conocimiento,  donde el participante, para resultar aprobado y obtener un certificado IFP de Aprobación,  debe obtener  un nivel mínimo de conocimientos y competencia determinado, o pueden ser   informativas, donde  la concurrencia a los mismos, dará lugar a un certificado IFP de Participación.</h3>
             </div>
           </div>
         </div>
@@ -137,7 +117,15 @@
       <!-- Counters-->
       <section class="section-75 section-md-120 section-lg-120 section-xl-75" id="custom-way-point">
         <div class="container text-left">
+          <h2 class="ifp-nuestros-cursos-title">Nuestros cursos</h2>
           <div class="row row-15 justify-content-sm-center">
+            <div class="col-md-9 col-lg-6">
+              <div class="box-info-custom" style="background-image: url(images/Manipulacion-manual-de-cargas.jpg );">
+                <div class="box-info-custom-inner">
+                  <h3 class="box-info-custom-title"><a href="catalogo-ergonomia-sst.html">Cursos SST — Talleres ergonomía e ISO</a></h3>
+                </div>
+              </div>
+            </div>
             <div class="col-md-9 col-lg-6">
               <div class="box-info-custom" style="background-image: url(images/espaciosconfinados.jpg );">
                 <div class="box-info-custom-inner">
@@ -204,15 +192,15 @@
             <div class="col-md-9 col-lg-6">
               <div class="box-info-custom" style="background-image: url(images/seguridadvial1.jpg );">
                 <div class="box-info-custom-inner">
-                  <h3 class="box-info-custom-title"><a href="curso-9.html"> Seguridad Vial I</a></h3>
+                  <h3 class="box-info-custom-title"><a href="curso-9.html">Seguridad Vial</a></h3>
                   
                 </div>
               </div>
             </div>
             <div class="col-md-9 col-lg-6">
-              <div class="box-info-custom" style="background-image: url(images/seguridadvial1.jpg );">
+              <div class="box-info-custom" style="background-image: url(images/2929.jpg );">
                 <div class="box-info-custom-inner">
-                  <h3 class="box-info-custom-title"><a href="curso-10.html"> Seguridad Vial II -  Conducción Preventiva</a></h3>
+                  <h3 class="box-info-custom-title"><a href="curso-10.html">Salud Mental en el ámbito Laboral</a></h3>
                   
                 </div>
               </div>
@@ -356,7 +344,7 @@
                   <p class="h6" style="color: #acacac;">Consultas por los costos de los cursos</p>
                   <a style="font-family: Arial, Helvetica, sans-serif; color: white;"  white;"  class="btn btn-default btn-form  " href="contacts.html">CONTACTANOS</a>
                   
-                  <p class="h6" style="color: #acacac;"><a style="color: #FF8C00;" href="https://www.impo.com.uy/bases/decretos/150-2007/42">De acuerdo al Artículo. 42°, numeral 16,  Decreto No. 150 / 007 de 26.04.2007,</a> los gastos de capacitación del personal, en perfeccionamiento técnico, gerencial o de dirección admiten la deducción integra del gasto por capacitación en el Impuesto a la Renta de la Actividades Económicas (IRAE), siempre que se cuente con documentación fehaciente.<br><br> <a class="h6" style="color: #FF8C00;;">La realización de cualquiera de nuestros cursos, sin importar la modalidad, dan lugar a la entrega de un certificado de participación, en el caso que la modalidad suponga la obtención de competencias, se realizará una evaluación final de conocimiento, que dará lugar a la entrega de un certificado de aprobación.</a></p>
+                  <p class="h6" style="color: #acacac;"><a style="color: #FF8C00;" href="https://www.impo.com.uy/bases/decretos/150-2007/42">De acuerdo al Artículo. 42°, numeral 16,  Decreto No. 150 / 007 de 26.04.2007,</a> los gastos de capacitación del personal, en perfeccionamiento técnico, gerencial o de dirección admiten la deducción integra del gasto por capacitación en el Impuesto a la Renta de la Actividades Económicas (IRAE), siempre que se cuente con documentación fehaciente.<br><br> <a class="h6" style="color: #FF8C00;">IFP es un instituto registrado en el MEC. Sacar certificado.</a> La realización de cualquiera de nuestros cursos, sin importar la modalidad, dan lugar a la entrega de un certificado de participación. En el caso que la modalidad suponga la obtención de competencias, se realizará una evaluación final de conocimiento, que dará lugar a la entrega de un certificado de aprobación. El Instituto de Formación en Prevención está registrado en el Ministerio de Educación y Cultura y se encuentra exonerado en lo que refiere al Art. 69 de la Constitución de la República en aplicación del Art° 448 de la Ley N° 16226 Decreto N° 166/008.</p>
                   
                   
                   
@@ -373,7 +361,7 @@
       <section class="section-75 section-sm-80 section-md-100 section-xl-150">
         <div class="container">
           <div class="row text-md-left row-55">
-            <div class="col-md-6 col-xl-3 col-xxl-4"><a href="home.html"><img class="img-responsive" src="images/brand-white-229x58.png" alt="" width="229" height="58"/></a>
+            <div class="col-md-6 col-xl-3 col-xxl-4"><a href="home.html"><img class="img-responsive" src="images/logo.gif" alt="" width="229" height="58"/></a>
               <p style="color: white;" class="offset-top-20 offset-md-top-35 inset-xxl-right-30" >Somos una empresa integrada por profesionales en Seguridad y Salud en el Trabajo y de otras especialidades del mundo del trabajo, dedicada a la formación en la materia.<br>
                 Todos nuestros cursos siguen lineamientos basados en proporcionar a nuestros clientes el servicio para cumplir con requerimientos legales relacionados a la capacitación del personal y el valor agregado de incorporar la Prevención de Riesgos a su gestión.
                 
@@ -400,14 +388,14 @@
                   <li>
                     <div class="unit flex-row unit-spacing-xs">
                       <div class="unit-left"><span class="icon icon--school-bus-yellow fa-map-marker"></span></div>
-                      <div class="unit-body"><a class="text-school-bus-yellow-white" href="https://www.google.com/maps/place/Carlos+Berg,+11300+Montevideo,+Departamento+de+Montevideo/@-34.9135651,-56.161113,17z/data=!3m1!4b1!4m5!3m4!1s0x959f81a0768b3f5f:0xd47351bc2c37a24e!8m2!3d-34.9135695!4d-56.1589243">  Montevideo, 11300</a></div>
+                      <div class="unit-body"><a class="text-school-bus-yellow-white" href="https://www.google.com/maps/search/Cerrito+532%2F406+Montevideo">Cerrito 532/406, Montevideo</a></div>
 
                     </div>
                   </li>
                   <li>
                     <div class="unit flex-row unit-spacing-xs">
-                      <div class="unit-left"><span class="icon icon--school-bus-yellow fa-phone"></span></div>
-                      <div class="unit-body"><a class="text-school-bus-yellow-white" href="https://wa.me/59892383737">092383737</a></div>
+                      <div class="unit-left"><span class="icon icon--school-bus-yellow fa-whatsapp"></span></div>
+                      <div class="unit-body"><a class="text-school-bus-yellow-white" href="https://wa.me/59892383737">092 38 37 37</a></div>
                     </div>
                   </li>
                   <li>
@@ -434,8 +422,10 @@
       <section class="section-25 bg-black-2">
         <div class="container">
           <div class="row align-items-md-center row-30">
-            <div class="col-md-8 text-md-left">
-              <p class="small-xs">Copyright	<span class="copyright-year"></span>	All rights reserved by ngerman297@gmail.com	
+            <div class="col-md-12 text-md-left">
+              <p class="small-xs">IFP es un instituto registrado en el MEC. Sacar certificado.</p>
+              <p class="small-xs" style="font-size: 11px; margin-top: 8px;">El Instituto de Formación en Prevención está registrado en el Ministerio de Educación y Cultura y se encuentra exonerado en lo que refiere al Art. 69 de la Constitución de la República en aplicación del Art° 448 de la Ley N° 16226 Decreto N° 166/008.</p>
+              <p class="small-xs" style="margin-top: 15px;">Copyright	<span class="copyright-year"></span>	All rights reserved by ngerman297@gmail.com	
               </p>
             </div>
           </div>
@@ -444,6 +434,11 @@
     </footer>
   </div>
   <div class="snackbars" id="form-output-global"></div>
-  <script src="js/core.min.js"></script>
-  <script src="js/script.js"></script>
+<a href="https://wa.me/59892383737" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar a IFP por WhatsApp" title="WhatsApp IFP: 092 38 37 37"><span class="fa fa-whatsapp"></span></a>
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/open-new-tab.js"></script>
+    <script src="js/mobile-menu-fix.js"></script>
+    <script src="js/ifp-mobile-extras.js"></script>
+<script src="js/bfcache-fix.js"></script>
 </body>
